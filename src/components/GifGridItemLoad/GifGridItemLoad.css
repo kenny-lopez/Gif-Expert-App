@@ -1,0 +1,44 @@
+.gif-grid-item-load {
+    border: 2px solid #4d5463;
+    width: 150px;
+    height: 200px;
+    text-align-last: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    padding-bottom: 0;
+    flex: 1 0 20%;
+}
+
+.gif-grid-item-load .img-item-load {
+    border-radius: 10px;
+    max-width: 100%;
+    height: calc(100% - 36.8px - 2rem - 4px);
+    background-color: #3c3e4e;
+    position: relative;
+    overflow: hidden;
+    animation: load 2s linear infinite;
+}
+
+.gif-grid-item-load .p-item-load {
+    border-radius: 10px;
+    background-color: #3c3e4e;
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 24px;
+    position: relative;
+    overflow: hidden;
+    animation: load 2s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        background-color: #333442;
+    }
+    50% {
+        background-color: #4e5268;
+    }
+    100% {
+        background-color: #333442;
+    }
+}

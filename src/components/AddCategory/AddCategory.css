@@ -1,0 +1,75 @@
+.add-category-style input { border-style: none; background: transparent; outline: none; }
+.add-category-style button { padding: 0; background: none; border: none; outline: none; }
+
+@keyframes gradient {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: 100% 0
+    }
+}
+
+.add-category-style {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    margin: 0;
+    border-radius: 2px;
+    padding: 0.6rem;
+    background: rgba(57, 63, 84, 0.8);
+}
+
+.add-category-style:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 999;
+    height: 3px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-position: 0% 0%;
+    background: linear-gradient(to right, #B294FF, #57E6E6, #FEFFB8, #57E6E6, #B294FF, #57E6E6);
+    background-size: 500% auto;
+    animation: gradient 3s linear infinite;
+}
+
+.add-category-style input {
+    flex-grow: 1;
+    color: #BFD2FF;
+    font-size: 1rem;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+}
+
+.add-category-style input:focus-visible {
+    outline: unset;
+}
+
+.add-category-style input::-webkit-input-placeholder {
+    color: #7881A1;
+}
+
+
+.add-category-style button {
+    display: flex;
+    color: #7881A1;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    vertical-align: middle;
+    transition: color .25s;
+    cursor: pointer;
+}
+
+.add-category-style button:hover {
+    color: #7881A1;
+}
+
+.add-category-style button > svg {
+    width: 30px;
+}
